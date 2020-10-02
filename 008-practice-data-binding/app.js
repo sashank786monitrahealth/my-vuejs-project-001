@@ -6,6 +6,11 @@ const app = Vue.createApp({
         randomNumber:Math.random()*5,
         imgeURL:'https://picsum.photos/seed/picsum/200/300'
     }
+    },
+    methods:{
+        calculateAge(){
+            return this.age +5;
+        }
     }
 })
 
