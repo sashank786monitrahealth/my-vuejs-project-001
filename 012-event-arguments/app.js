@@ -17,6 +17,7 @@ const app = Vue.createApp({
       this.counter -= num;
     },
     setName(event){
+      console.log(event);
       this.username = event.target.value;
     }
   }
