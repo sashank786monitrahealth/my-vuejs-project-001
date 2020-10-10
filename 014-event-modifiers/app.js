@@ -7,9 +7,13 @@ const app = Vue.createApp({
     return {
       counter: 0,
       username:"",
+      confirmName:""
     };
   },
   methods:{
+    confirmInput(){
+       this.confirmName = this.username;
+    },
     submitForm(event){
       //event.preventDefault();
       alert('submitted');
