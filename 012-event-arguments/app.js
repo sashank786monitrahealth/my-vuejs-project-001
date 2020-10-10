@@ -6,7 +6,6 @@ const app = Vue.createApp({
   data: function() {
     return {
       counter: 0,
-      username:"",
     };
   },
   methods:{
@@ -15,10 +14,6 @@ const app = Vue.createApp({
     },
     sub(num){
       this.counter -= num;
-    },
-    setName(event){
-      console.log(event);
-      this.username = event.target.value;
     }
   }
 });
