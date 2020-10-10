@@ -11,7 +11,7 @@ const app = Vue.createApp({
   },
   methods:{
     submitForm(event){
-      event.preventDefault();
+      //event.preventDefault();
       alert('submitted');
     },
     add(num){
