@@ -5,7 +5,7 @@ function add(){
 const app = Vue.createApp({
   data: function() {
     return {
-      counter: 0,
+      counter: 10,
       username:"",
       confirmName:""
     };
