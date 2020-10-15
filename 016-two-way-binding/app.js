@@ -17,7 +17,7 @@ const app = Vue.createApp({
       // this.counter--;
     },
     resetInput(){
-      
+      this.name = ''
     }
   }
 });
