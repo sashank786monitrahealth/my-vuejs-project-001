@@ -26,6 +26,18 @@
       -->
       <!--enabling two way binding using v-model directive-->
       <input type="text" v-model="name">
+      <!--Now this v-model directive now simply wants the data property it wants to manage for you.
+      The name property is now managed by Vue - such that it is updated on the input event
+      and the name properties value is then sent back into the input element. 
+      So, w-model directive is simply now a shortcut for v-bind:value
+      and 
+      v-on:input.
+      Now, this is a concept of two-way binding. Because , we are communicating both ways:
+      1. We are listening to an event coming out of the input element (to the input event)
+      2. We are writing the data back to the input element through its value attribute - its value property.
+
+        It makes getting user input and updating it . It is less code - hence, absolutely a pattern you must include in yout code.
+      -->>
       <button v-on:click="resetInput">Reset Input</button>
       <p>Your Name: {{ name }}</p>
     </section>
